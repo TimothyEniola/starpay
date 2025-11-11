@@ -9,7 +9,7 @@
 // export default App
 
 import React from "react";
-import stars from "./assets/stars.png";
+import stars from "./assets/Stars.png";
 import whatsapp from "./assets/whatsapp.png";
 import {
   FaXTwitter,
