@@ -8,7 +8,7 @@ import { IoIosArrowBack } from "react-icons/io";
 const JoinWaitlist = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center from-[#f5fdf3] to-[#eff3ee] px-4 relative mt-20 mb-20">
-      <div className="fixed top-6 left-6 cursor-pointer">
+      <div className="fixed top-6 left-16 cursor-pointer">
         <button className="bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-md">
           <IoIosArrowBack size={20} className="text-green-600" />
         </button>
@@ -72,7 +72,7 @@ const JoinWaitlist = () => {
         />
       </div>
 
-      <div className="hidden lg:block lg:fixed lg:bottom-6 lg:right-6 z-10">
+      <div className="hidden lg:block lg:fixed lg:bottom-6 lg:right-16 z-10">
         <img
           src={whatsapp}
           alt="whatsapp"
