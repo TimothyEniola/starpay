@@ -7,13 +7,11 @@ import { PiLinkedinLogoBold } from "react-icons/pi";
 import { IoIosArrowBack } from "react-icons/io";
 const JoinWaitlist = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center from-[#f5fdf3] to-[#eff3ee] px-4 relative">
-      <div className="fixed top-6 left-6">
-        {" "}
+    <div className="min-h-screen flex flex-col justify-center items-center from-[#f5fdf3] to-[#eff3ee] px-4 relative mt-20 mb-20">
+      <div className="fixed top-6 left-6 cursor-pointer">
         <button className="bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-md">
-          {" "}
-          <IoIosArrowBack size={20} className="text-green-600" />{" "}
-        </button>{" "}
+          <IoIosArrowBack size={20} className="text-green-600" />
+        </button>
       </div>
       <div className="flex justify-center mb-2">
         <img src={stars} alt="stars" className="w-32 h-32 object-contain" />
@@ -31,7 +29,7 @@ const JoinWaitlist = () => {
       </p>
 
       {/* Form */}
-      <form className="w-full max-w-xs lg:max-w-md md:max-w-sm   space-y-3">
+      <form className="w-full max-w-xs lg:max-w-md md:max-w-sm space-y-3">
         <input
           type="email"
           placeholder="Enter your email"
@@ -42,22 +40,23 @@ const JoinWaitlist = () => {
           placeholder="Enter your phone number"
           className="w-full px-4 py-3 border border-gray-300 rounded-md outline-none focus:ring-2 focus:ring-[#91C730] transition"
         />
+        <div className="mt-5 space-y-3">
+          <button
+            type="submit"
+            className="w-full bg-[#91C730] text-white font-semibold py-3 rounded-md hover:bg-green-600 transition">
+            Join waitlist
+          </button>
 
-        <button
-          type="submit"
-          className="w-full bg-[#91C730] text-white font-semibold py-3 rounded-md hover:bg-green-600 transition">
-          Join waitlist
-        </button>
-
-        <button
-          type="button"
-          className="w-full bg-[#3FABDD] text-white font-semibold py-3 rounded-md hover:bg-[#2599d4] transition">
-          Take a survey
-        </button>
+          <button
+            type="button"
+            className="w-full bg-[#3FABDD] text-white font-semibold py-3 rounded-md hover:bg-[#2599d4] transition">
+            Take a survey
+          </button>
+        </div>
       </form>
 
       {/* Social icons */}
-      <div className="flex justify-center space-x-6 mt-8">
+      <div className="flex justify-center space-x-10 mt-12">
         <FaXTwitter size={22} className="cursor-pointer hover:text-[#91C730]" />
         <FaInstagram
           size={22}
@@ -73,7 +72,6 @@ const JoinWaitlist = () => {
         />
       </div>
 
-      {/* WhatsApp Floating Button - hidden up to md (tablet), visible fixed bottom-right on lg+ */}
       <div className="hidden lg:block lg:fixed lg:bottom-6 lg:right-6 z-10">
         <img
           src={whatsapp}
